@@ -1,0 +1,9 @@
+/* 스타일 예시 */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#map {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
