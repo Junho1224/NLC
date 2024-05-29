@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "nlc"
+version = "0.1.0"
+description = "pp"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sqlalchemy = "^2.0.30"
+fastapi = "^0.111.0"
+uvicorn = "^0.30.0"
+requests = "^2.32.2"
+pandas = "^2.2.2"
+beautifulsoup4 = "^4.12.3"
+pydantic = "^2.7.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
