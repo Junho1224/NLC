@@ -3,11 +3,11 @@
 
 from requests import Session
 
-from lands.land_schema import LandsBase
+from lands.land_schema import LandsBase, LandsCreate
 from models import Lands
 
 
-def insert_land(new_house: LandsBase, db: Session):
+def insert_land(new_house: LandsCreate, db: Session):
     post = Lands(
         atclNm = new_house.atclNm,
         rletTpNm = new_house.rletTpNm,

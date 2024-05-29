@@ -11,7 +11,7 @@ app = APIRouter(
 )
 
 @app.post(path="/create")
-async def create_land(new_house: land_schema.LandsBase, db: Session = Depends(get_db)):
+async def create_land(new_house: land_schema.LandsCreate, db: Session = Depends(get_db)):
     return land_crud.insert_land(new_house, db)
 
 @app.get(path="/read", response_model= land_schema.LandsBase)

@@ -11,8 +11,15 @@ class LandsBase(BaseModel):
     lat: float
     lng: float
 
+class LandsCreate1   (BaseModel):
+    atclNm: str
+    rletTpNm: str
+    prc: int
+
 class LandsCreate(LandsBase):
-    pass
+    atclNm: str
+    rletTpNm: str
+    prc: int
 
 class LandsUpdate(LandsBase):
     pass
