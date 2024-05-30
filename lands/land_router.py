@@ -3,7 +3,8 @@ from database import get_db
 
 from fastapi import APIRouter, Depends
 
-from lands import land_schema, land_crud
+from lands.model import land_schema
+from lands.repository import land_crud
 
 app = APIRouter(
     prefix="/lands",
