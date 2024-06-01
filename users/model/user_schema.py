@@ -4,8 +4,6 @@ from fastapi import HTTPException
 from pydantic import BaseModel, field_validator, EmailStr
 
 
-
-
 class NewUserForm(BaseModel):
     email: str
     name: str

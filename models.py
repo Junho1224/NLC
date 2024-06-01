@@ -22,7 +22,7 @@ class Lands(Base):
     __tablename__ = 'lands'
 
     id = Column(Integer, primary_key=True, index=True)
-    area = Column(Integer, nullable=False) # 생각해보니 가지고있을 필요 없음.
+    area = Column(Integer, nullable=False) 
     atclNo = Column(Integer) # 네이버 번호
     atclNm = Column(VARCHAR(100), nullable=False) #아파트/상가 명
     rletTpNm = Column(VARCHAR(30), nullable=False) #상가 구분

@@ -1,7 +1,8 @@
+from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 from database import get_db
 
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, Query
 
 from lands.model import land_schema
 from lands.repository import land_crud
@@ -22,3 +23,4 @@ async def read_land(db: Session = Depends(get_db)):
 @app.get(path="/read/{land_id}")
 async def read_land(land_id: int, db: Session = Depends(get_db)):
     return land_crud.get_land(land_id, db)
+
