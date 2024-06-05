@@ -50,7 +50,7 @@ async def read_index():
         return HTMLResponse(content=f.read(), status_code=200)
 
 @app.get("/api/locations", response_class=JSONResponse)
-async def get_locations(type: str = Query(None, alias="type"), page: int = Query(1, alias="page"), page_size: int = Query(100, alias="pageSize"), db: Session = Depends(get_db)):
+async def get_locations(type: str = Query(None, alias="type"), page: int = Query(1, alias="page"), page_size: int = Query(500, alias="pageSize"), db: Session = Depends(get_db)):
     offset = (page - 1) * page_size
     locations = land_crud.get_filtered_locations(db, type=type, offset=offset, limit=page_size)
     return JSONResponse(content=locations, status_code=200)
