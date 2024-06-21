@@ -25,9 +25,11 @@ for index, row in df.iterrows():
         spc1=row['spc1'],
         spc2=row['spc2'],
         direction=row['direction'],
+        atclCfmYmd=row['atclCfmYmd'],
         atclFetrDesc=row['atclFetrDesc'],
         tagList=row['tagList'],
         bildNm=row['bildNm'],
+        
     )
     session.add(land)
     

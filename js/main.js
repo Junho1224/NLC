@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <p>유형: ${location.rletTpNm}</p>
             <p>거래 유형: ${location.tradTpNm}</p>
             <p>가격: ${location.prc} (만원)</p>
-            <p>임대비: ${checkValue(location.rentPrc)}</p>
+            <p>월세: ${checkValue(location.rentPrc)}</p>
             <p>보증금: ${checkValue(location.hanPrc)}</p>
             <p>공급 면적: ${location.spc1}</p>
             <p>전용 면적: ${location.spc2}</p>

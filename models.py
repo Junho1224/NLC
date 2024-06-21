@@ -37,6 +37,7 @@ class Lands(Base):
     atclFetrDesc = Column(String(500)) # "[한줄 정보]",
     tagList = Column(String(500)) # “[”기타 정보”]”,
     bildNm = Column(String(30)) # "동수",
+    atclCfmYmd = Column(String(30)) # "확인일자",
     
     # Relationship with LandsAdd
     lands_add = relationship("LandsAdd", back_populates="lands")
